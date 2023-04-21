@@ -14,7 +14,7 @@ resource "aws_subnet" "directory_service_subnet_2" {
 
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
-  name   = "mitre-dev"
+  name   = "host-dev"
   cidr   = "10.10.0.0/16"
   azs             = ["us-east-1a", "us-east-1b"]
   private_subnets = ["10.10.1.0/24", "10.10.2.0/24"]
@@ -25,14 +25,14 @@ module "vpc" {
   enable_dns_hostnames = true
   enable_dns_support   = true
   tags = {
-    Name        = "mitre-dev"
+    Name        = "host-dev"
     Environment = "Development"
   }
 }
 
 resource "aws_directory_service_directory" "aws-managed-ad" {
   name        = "dev.mitre-dev.local"
-  description = "MITRE Managed Directory Service"
+  description = "Host Managed Directory Service"
   password    = "Sup3rS3cr3tP@ssw0rd"
   edition     = "Standard"
   type        = "MicrosoftAD"
