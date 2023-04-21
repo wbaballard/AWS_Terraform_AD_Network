@@ -1,9 +1,9 @@
 output "password1" {
-  value = aws_iam_user_login_profile.Ben.encrypted_password
+  value = aws_iam_user_login_profile.User1.encrypted_password
 }
 
 output "password2" {
-  value = aws_iam_user_login_profile.Jake.encrypted_password
+  value = aws_iam_user_login_profile.User2.encrypted_password
 }
 
 output "server_private_ip" {
