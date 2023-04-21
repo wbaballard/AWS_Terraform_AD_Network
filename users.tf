@@ -1,19 +1,19 @@
-resource "aws_iam_user" "Ben" {
-  name          = "Ben"
+resource "aws_iam_user" "User1" {
+  name          = "User1"
   path          = "/"
   force_destroy = true
 }
 
-resource "aws_iam_user_login_profile" "Ben" {
-  user    = aws_iam_user.Ben.name
+resource "aws_iam_user_login_profile" "User1" {
+  user    = aws_iam_user.User1.name
 }
 
-resource "aws_iam_user" "Jake" {
-  name          = "Jake"
+resource "aws_iam_user" "User2" {
+  name          = "User2"
   path          = "/"
   force_destroy = true
 }
 
-resource "aws_iam_user_login_profile" "Jake" {
-  user    = aws_iam_user.Jake.name
+resource "aws_iam_user_login_profile" "User2" {
+  user    = aws_iam_user.User2.name
 }
