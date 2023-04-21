@@ -1,7 +1,7 @@
 provider "aws" {
   region     = "us-east-1"
-  access_key = "AKIA3LX2YTC7SISONQP6"
-  secret_key = "3mz6Lbq7lPMyuKqPYFvseuQoABh1EAigsBmCOBv5"
+  access_key = "{your_key}"
+  secret_key = "{your_key}"
 }
 
 # # Generates a secure private key and encodes it as PEM
