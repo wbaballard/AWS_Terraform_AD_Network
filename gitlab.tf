@@ -12,6 +12,3 @@ resource "aws_instance" "gl-server-instance" {
 }
 
 # Ubuntu GitLab instalation: https://about.gitlab.com/install/#ubuntu
-
-# essential for hot fixing Ubuntu instance: https://phoenixnap.com/kb/fix-sub-process-usr-bin-dpkg-returned-error-code-1#:~:text=The%20dpkg%20error%20message%20indicates,attain%20a%20working%20package%20installer.
-# https://gitlab.mitre-terraform.com
